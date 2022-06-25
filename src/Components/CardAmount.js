@@ -1,8 +1,11 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom'
+import Swal from 'sweetalert2'
 
 function CardAmount({ temporary }) {
 
+    const history = useNavigate()
 
 
     return (
@@ -28,7 +31,13 @@ function CardAmount({ temporary }) {
 
             </div>
             <div >
-                <Button style={{ width: '100%', fontSize: '12px', padding: '10px' }} className="text-uppercase">
+                <Button style={{ width: '100%', fontSize: '12px', padding: '10px' }}
+                    onClick={(event) => {
+                        Swal.fire("Success checkout", "you have pay for finish this order", "success")
+                        history("/")
+                        event.preventDefault()
+                    }}
+                    className="text-uppercase">
                     go to checkout
                 </Button>
             </div>
