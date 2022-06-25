@@ -1,0 +1,4 @@
+export const ADD_BUCKET = 'ADD_BACKET'
+export const REDUCE_BUCKET = 'REDUCE_BACKET'
+export const LIST_BUCKET = 'LIST_BUCKET'
+export const REMOVE_BUCKET = 'REMOVE_BUCKET'
