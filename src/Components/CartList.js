@@ -18,7 +18,7 @@ function CartList({ list, addBucket, reduceBucket }) {
                         <div key={index} className='border-bottom py-3'>
                             <Row >
                                 <Col xl={3}>
-                                    <img width={180} height={200} src={data.image} alt="test" />
+                                    <img className="img-card" src={data.image} alt="test" />
                                 </Col>
                                 <Col xl={6}  >
                                     <h2 className='fw-bold' style={{ fontSize: '30px' }}>{data.title}</h2>
